@@ -1,10 +1,13 @@
-title: generic-python-function-scope
+title: Functions and scope
 hero_image: images/banner.png
-description: generic-python-function-scope description
+description: Scope in Python functions
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
 theme: cc-prototype
 duration: 1 # 1, 2 or 3
-ingredient: false
+ingredient: true
 listed: false
+copyedit: false
+interests:
+technologies: "python"
 steps:
-  - title: Step one
+  - title: What is scope?
