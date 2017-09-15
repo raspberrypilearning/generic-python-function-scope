@@ -1,8 +1,8 @@
-title: Functions and scope
+title: Scope in Python Functions
 hero_image: images/banner.png
-description: Scope in Python functions
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
-theme: cc-prototype
+description: Learn about variable scoping within functions
+original_url:
+theme: red
 duration: 1 # 1, 2 or 3
 ingredient: true
 listed: false
