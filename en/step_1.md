@@ -47,4 +47,3 @@ def say_hello():
 say_hello()
 print("The main program thinks the variable word is:" + word)
 ```
---- /step ---
