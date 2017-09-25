@@ -6,7 +6,7 @@ theme: red
 duration: 1 # 1, 2 or 3
 ingredient: true
 listed: false
-copyedit: false
+copyedit: true
 interests:
 technologies: "python"
 steps:
