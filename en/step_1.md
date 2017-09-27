@@ -1,4 +1,4 @@
-Any variable created inside a function is said to be **local** to that function. That is, any code outside of the function won't have access to that variable. Here is a simple function:
+Any variable created inside a function is **local** to that function. That is, any code outside of the function won't have access to that variable. Here is a simple function:
 
 ```python
 def say_hello():
@@ -6,7 +6,7 @@ def say_hello():
 	print(word)
 ```
 
-The variable `word` is local to this function. We say that the variable is in the function's **scope**. That means you can't use that variable outside of the function. For instance, this code causes an error:
+The variable `word` is local to this function. We also say that the variable is within the function's **scope**. That means you can't use that variable outside of the function. For instance, this code causes an error:
 
 ```python
 def say_hello():
@@ -17,7 +17,7 @@ say_hello()
 print(word)
 ```
 
-The variable `word` is outside of the scope of the main program — it only exists within the function.
+This is because the variable `word` is outside of the scope of the main program — it only exists within the function.
 
 *[global variable]: A **global** variable is a variable declared outside of a function, i.e. within the main program.
 
