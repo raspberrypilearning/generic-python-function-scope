@@ -3,7 +3,7 @@ Any variable created inside a function is **local** to that function. That is, a
 ```python
 def say_hello():
     word = "Hello"
-	print(word)
+    print(word)
 ```
 
 The variable `word` is local to this function. We also say that the variable is within the function's **scope**. That means you can't use that variable outside of the function. For instance, this code causes an error:
@@ -11,7 +11,7 @@ The variable `word` is local to this function. We also say that the variable is 
 ```python
 def say_hello():
     word = "Hello"
-	print(word)
+    print(word)
 
 say_hello()
 print(word)
@@ -27,8 +27,8 @@ You can only change the value of a global variable within a function if you tell
 word = "Goodbye"
 
 def say_hello():
-	word = "Hello"
-	print("The function thinks that the variable word is:" + word)
+    word = "Hello"
+    print("The function thinks that the variable word is:" + word)
 
 say_hello()
 print("The main program thinks the variable word is:" + word)
@@ -40,9 +40,9 @@ However, if you declare the variable `word` to be global within the function, th
 word = "Goodbye"
 
 def say_hello():
-  global word
-	word = "Hello"
-	print("The function thinks that the variable word is:" + word)
+    global word
+    word = "Hello"
+    print("The function thinks that the variable word is:" + word)
 
 say_hello()
 print("The main program thinks the variable word is:" + word)
