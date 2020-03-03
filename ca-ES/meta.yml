@@ -1,0 +1,15 @@
+---
+title: Scope in Python functions
+hero_image: images/banner.png
+description: Learn about variable scoping within functions
+original_url:
+theme: red
+duration: 1 #1, 2 or 3
+ingredient: true
+listed: false
+copyedit: true
+interests:
+technologies: "python"
+steps:
+  - 
+    title: What is scope?
