@@ -1,7 +1,7 @@
 ---
-title: Scope in Python functions
+title: Bereik in Python-functies
 hero_image: images/banner.png
-description: Learn about variable scoping within functions
+description: Meer informatie over het bereik van variabelen binnen functies
 original_url:
 theme: red
 duration: 1 #1, 2 or 3
@@ -12,4 +12,4 @@ interests:
 technologies: "python"
 steps:
   - 
-    title: What is scope?
+    title: Wat is bereik?
