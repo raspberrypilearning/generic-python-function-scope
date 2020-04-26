@@ -1,47 +1,47 @@
-Any variable created inside a function is **local** to that function. That is, any code outside of the function won't have access to that variable. Here is a simple function:
+Elke variabele die binnen een functie wordt gemaakt, is **lokaal** voor die functie. Dat wil zeggen, alle code buiten de functie heeft geen toegang tot die variabele. Hier is een eenvoudige functie:
 
 ```python
-def say_hello():
-    word = "Hello"
-    print(word)
+def zeg_hallo():
+    woord = "Hallo"
+    print(woord)
 ```
 
-The variable `word` is local to this function. We also say that the variable is within the function's **scope**. That means you can't use that variable outside of the function. For instance, this code causes an error:
+De variabele `woord` is lokaal voor deze functie. We zeggen ook dat de variabele binnen het **bereik** (Engels: scope) van de functie is. Dat betekent dat je die variabele niet buiten de functie kunt gebruiken. Deze code veroorzaakt bijvoorbeeld een fout:
 
 ```python
-def say_hello():
-    word = "Hello"
-    print(word)
+def zeg_hallo():
+    woord = "Hallo"
+    print(woord)
 
-say_hello()
-print(word)
+zeg_hallo()
+print(woord)
 ```
 
-This is because the variable `word` is outside of the scope of the main program — it only exists within the function.
+Dit komt omdat de variabele `woord` buiten het bereik van het hoofdprogramma valt - het bestaat alleen binnen de functie.
 
-You can only change the value of a global variable within a function if you tell the function that the variable is global. In the example below, changing the value of the variable `word` inside the function has no effect on the variable `word` in the main program. A completely separate copy of the variable has been created and altered within the function:
+Je kunt alleen de waarde van een globale variabele binnen een functie wijzigen als je de functie vertelt dat die de variabele globaal is. In het onderstaande voorbeeld heeft het wijzigen van de waarde van variabele `woord` in de functie geen effect op variabele `woord` in het hoofdprogramma. Er is een volledig afzonderlijke kopie van de variabele gemaakt en gewijzigd binnen de functie:
 
 ```python
-word = "Goodbye"
+woord = "Tot ziens"
 
-def say_hello():
-    word = "Hello"
-    print("The function thinks that the variable word is:" + word)
+def zeg_hallo():
+    woord = "Hallo"
+    print("De functie denkt dat de variabele woord is:" + woord)
 
-say_hello()
-print("The main program thinks the variable word is:" + word)
+zeg_hallo()
+print("Het hoofdprogramma denkt dat de variabele woord is:"+ woord)
 ```
 
-However, if you declare the variable `word` to be global within the function, the function will edit the copy of the variable in the main program:
+Als je echter de variabele `woord` binnen de functie als globaal verklaart, bewerkt de functie de kopie van de variabele in het hoofdprogramma:
 
 ```python
-word = "Goodbye"
+woord = "Tot ziens"
 
-def say_hello():
-    global word
-    word = "Hello"
-    print("The function thinks that the variable word is:" + word)
+def zeg_hallo():
+    globaal woord
+    woord = "Hallo"
+    print("De functie denkt dat de variabele woord is:" + woord)
 
-say_hello()
-print("The main program thinks the variable word is:" + word)
+zeg_hallo()
+print("Het hoofdprogramma denkt dat de variabel woord is:" + woord)
 ```
