@@ -1,0 +1,14 @@
+---
+title: Bereik in Python-functies
+hero_image: images/banner.png
+description: Meer informatie over het bereik van variabelen binnen functies
+original_url:
+theme: red
+duration: 1 #1, 2 or 3
+ingredient: true
+listed: false
+copyedit: true
+interests:
+technologies: "python"
+steps:
+  - title: Wat is bereik?
