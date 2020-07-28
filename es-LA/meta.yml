@@ -1,0 +1,14 @@
+---
+title: Alcance en funciones de Python
+hero_image: images/banner.png
+description: Aprende sobre el alcance de las variables dentro de las funciones
+original_url:
+theme: red
+duration: 1 #1, 2 or 3
+ingredient: true
+listed: false
+copyedit: true
+interests:
+technologies: "python"
+steps:
+  - title: '¿Qué es el alcance?'
