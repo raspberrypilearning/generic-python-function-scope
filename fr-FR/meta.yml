@@ -1,7 +1,7 @@
 ---
-title: Scope in Python functions
+title: La portée des fonctions Python
 hero_image: images/banner.png
-description: Learn about variable scoping within functions
+description: Apprendre la portée des variables dans les fonctions
 original_url:
 theme: red
 duration: 1 #1, 2 or 3
@@ -12,4 +12,4 @@ interests:
 technologies: "python"
 steps:
   - 
-    title: What is scope?
+    title: Qu'est-ce que la portée ?
