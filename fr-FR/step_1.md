@@ -1,47 +1,47 @@
-Any variable created inside a function is **local** to that function. That is, any code outside of the function won't have access to that variable. Here is a simple function:
+Toute variable créée à l'intérieur d'une fonction est **locale** à cette fonction. C'est-à-dire que tout code extérieur à la fonction n'aura pas accès à cette variable. Voici une fonction simple :
 
 ```python
-def say_hello():
-    word = "Hello"
-    print(word)
+def dire_bonjour():
+    mot = "Bonjour"
+    print(mot)
 ```
 
-The variable `word` is local to this function. We also say that the variable is within the function's **scope**. That means you can't use that variable outside of the function. For instance, this code causes an error:
+La variable `mot` est locale à cette fonction. On dit aussi que la variable se trouve dans la **portée** de la fonction. Cela signifie que tu ne peux pas utiliser cette variable en dehors de la fonction. Par exemple, ce code provoque une erreur :
 
 ```python
-def say_hello():
-    word = "Hello"
-    print(word)
+def dire_bonjour():
+    mot = "Bonjour"
+    print(mot)
 
-say_hello()
-print(word)
+dire_bonjour()
+print(mot)
 ```
 
-This is because the variable `word` is outside of the scope of the main program — it only exists within the function.
+C'est parce que la variable `mot` est en dehors de la portée du programme principal. Elle n'existe qu'à l'intérieur de la fonction.
 
-You can only change the value of a global variable within a function if you tell the function that the variable is global. In the example below, changing the value of the variable `word` inside the function has no effect on the variable `word` in the main program. A completely separate copy of the variable has been created and altered within the function:
+Tu ne peux modifier la valeur d'une variable globale à l'intérieur d'une fonction que si tu indiques à la fonction que la variable est globale. Dans l'exemple ci-dessous, la modification de la valeur de la variable `mot` à l'intérieur de la fonction n'a aucun effet sur la variable `mot` dans le programme principal. Une copie complètement distincte de la variable a été créée et modifiée dans la fonction :
 
 ```python
-word = "Goodbye"
+mot = "Au revoir"
 
-def say_hello():
-    word = "Hello"
-    print("The function thinks that the variable word is:" + word)
+def dire_bonjour():
+    mot = "Bonjour"
+    print("La fonction pense que la variable word est :" + word)
 
-say_hello()
-print("The main program thinks the variable word is:" + word)
+dire_bonjour()
+print("Le programme principal pense que la variable word est :" + word)
 ```
 
-However, if you declare the variable `word` to be global within the function, the function will edit the copy of the variable in the main program:
+Cependant, si tu déclares la variable `mot` comme étant globale au sein de la fonction, la fonction modifiera la copie de la variable dans le programme principal :
 
 ```python
-word = "Goodbye"
+mot = "Au revoir"
 
-def say_hello():
-    global word
-    word = "Hello"
-    print("The function thinks that the variable word is:" + word)
+def dire_bonjour():
+    mot global
+    mot = "Bonjour"
+    print("La fonction pense que la variable word est :" + word)
 
-say_hello()
-print("The main program thinks the variable word is:" + word)
+dire_bonjour()
+print("Le programme principal pense que la variable word est :" + word)
 ```
